@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible",content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TP Cinéma</title>
-        <meta name="description" content="description d'environ 160 caractères">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <script src="script.js" defer></script>
+        <meta
+            name="description"
+            content="Découvrez les meilleurs films de bla bla"
+        />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+
+        <script src="carousel.js" defer type="module"></script>
     </head>
     <body>
-        <h1></h1>
+        <nav>
+            <img src="./img/Logo 1 1.png" alt="logo">
+            <div>
+                <a href="#">À propos</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+        <!-- <h1>Sorties de la semaine</h1> -->
         <header>
             <div class="carousel">
-                <article>
-                    <img src="https://loremflickr.com/1220/400/dog" alt="">
-                    <h2>Dog</h2>
-                </article>
-                <article>
-                    <img src="https://loremflickr.com/1220/400/cat" alt="">
-                    <h2>Titre</h2>
-                </article>
-                <article>
-                    <img src="https://loremflickr.com/1220/400/duck" alt="">
-                    <h2>Titre</h2>
-                </article>
             </div>
         </header>
-        <button class="previous"><i class="bi bi-chevron-left"></i></button>
-        <button class="next"><i class="bi bi-chevron-right"></i></button>
+        <!-- .controls -->
+        <div class="controls">
+            <button class="previous"><i class="bi bi-chevron-left"></i></button>
+            <button class="next"><i class="bi bi-chevron-right"></i></button>
+        </div>
+        <!-- <p class="debug"></p> -->
+
+        <div class="description">
+            <h2>titre du film</h2>
+            <div>
+                <p class="petit-titre">Synopsis</p>
+                <p>Action, Fantastique, Aventure</p>
+                <p>Un adolescent se réveille dans un monte-charge, sans aucun souvenir de son identité. Il se retrouve parmi d'autres garçons dans une vaste zone herbeuse appelée le « bloc », entourée de hauts murs de béton. Les jeunes gens (ou « blocards ») ont formé une société rudimentaire, chacun assumant des tâches spécialisées. Leur chef, Alby lui dicte les règles : aucune paresse, aucune agression et, le plus important, ne jamais aller de l'autre côté du mur.</p>
+                <p>Le garçon apprend de Chuck (le dernier arrivant et le plus jeune) et de Newt (le leader en second) que le vaste labyrinthe qui les entoure est la seule issue.
+                    Tous les mois depuis trois ans, un nouvel arrivant arrive par le monte-charge (la « boîte ») avec des vivres et du matériel.</p>
+                <p class="petit-titre">Distribution</p>
+                <ul>
+                    <li>Universal</li>
+                    <li>Fox</li>
+                    <li>Paramount</li>
+                </ul>
+                <p>Réalisation : Wess Ball</p>
+            </div>
+        </article>
     </body>
 </html>
